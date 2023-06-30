@@ -1,0 +1,35 @@
+import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown'; import { Button, Alert } from 'react-bootstrap';
+import ScientificCalculator from './ScientificCalculator';
+import Contador from './components/Contador';
+import Navbare from './components/navbar';
+
+function App() {
+  return (
+    <div className="App">
+
+      <Navbare />
+      <ScientificCalculator />
+      < Contador />
+
+      {/* <Navbar className="bg-body-tertiary" fixed='bottom'>
+        <Container>
+          <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
+          <Navbar.Toggle />
+          <Navbar.Collapse className="justify-content-end">
+            <Navbar.Text>
+              Signed in as: <a href="#login">Miguel Andy Contreras Esparza</a>
+            </Navbar.Text>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar> */}
+    </div>
+  );
+}
+
+export default App;
